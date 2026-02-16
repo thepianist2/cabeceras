@@ -278,66 +278,10 @@
       <section class="panel" aria-labelledby="panel-title">
         <h2 id="panel-title">¿Qué significa esto?</h2>
         <p>
-          El contenido se entrega mediante <strong>HTTPS</strong>, lo que garantiza un canal cifrado entre el servidor y tu navegador. Además, el servidor ha sido configurado para incluir cabeceras HTTP de seguridad y control, útiles para pruebas de comportamiento del cliente, políticas de seguridad y mitigación de riesgos.
+          Prueba con cabeceras no webview.
         </p>
 
-        <p>
-          Usa esta página para verificar visualmente que tu despliegue expone las cabeceras esperadas. En el panel derecho se muestran ejemplos de cabeceras que suelen aplicarse en entornos de prueba.
-        </p>
-
-        <a class="cta" href="#" aria-hidden="true">Verificar despliegue</a>
-
-        <div class="foot" style="margin-top:18px;">
-          <span class="hint">Ideal para pruebas en Netlify / Vercel / Cloudflare</span>
-          <small style="color:var(--muted)">Ejemplo estático — sin JavaScript.</small>
-        </div>
       </section>
-
-      <!-- right -->
-      <aside class="headers-card" aria-label="Cabeceras modificadas de ejemplo">
-        <h3>Cabeceras modificadas (ejemplo)</h3>
-
-        <div class="header-list" role="list">
-          <div class="hdr" role="listitem">
-            <span class="k">Strict-Transport-Security</span>
-            <span class="v">max-age=31536000; includeSubDomains; preload</span>
-          </div>
-
-          <div class="hdr" role="listitem">
-            <span class="k">X-Frame-Options</span>
-            <span class="v">DENY</span>
-          </div>
-
-          <div class="hdr" role="listitem">
-            <span class="k">X-Content-Type-Options</span>
-            <span class="v">nosniff</span>
-          </div>
-
-          <div class="hdr" role="listitem">
-            <span class="k">Referrer-Policy</span>
-            <span class="v">no-referrer-when-downgrade</span>
-          </div>
-
-          <div class="hdr" role="listitem">
-            <span class="k">Content-Security-Policy</span>
-            <span class="v">default-src 'self'; img-src 'self' data:;</span>
-          </div>
-
-          <div class="hdr" role="listitem">
-            <span class="k">Permissions-Policy</span>
-            <span class="v">geolocation=(), microphone=()</span>
-          </div>
-
-          <div class="hdr" role="listitem">
-            <span class="k">Access-Control-Allow-Origin</span>
-            <span class="v">https://mi-app-de-prueba.com</span>
-          </div>
-        </div>
-
-        <p style="color:var(--muted); margin-top:14px; font-size:0.9rem;">
-          <strong>Nota:</strong> Estos valores son ejemplos típicos. Comprueba el servidor real con <span style="font-family: ui-monospace, monospace; background:rgba(255,255,255,0.02); padding:4px 6px; border-radius:6px;">curl -I https://tu-dominio</span>
-        </p>
-      </aside>
     </div>
   </main>
 </body>
